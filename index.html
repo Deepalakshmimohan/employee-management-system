@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Employee Management System</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=Figtree:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="stage">
+
+  <!-- PROJECT CARD (employee ID badge) -->
+  <div class="badge-wrap">
+    <div class="strap"></div>
+    <article class="badge">
+      <div class="slot"></div>
+      <header class="badge-top">
+        <small>Project</small>
+        <h1>Employee Management System</h1>
+      </header>
+      <div class="badge-body">
+        <p>Application for comprehensive employee record management. Utilized object-oriented principles to organize functionality and process CRUD actions securely.</p>
+        <div class="tags"><span class="tag">Java</span><span class="tag">OOP</span><span class="tag">CRUD</span></div>
+        <div class="btns">
+          <a class="btn ghost" href="https://github.com/your-username/employee-management-system" target="_blank" rel="noopener">Code</a>
+          <a class="btn solid" href="https://your-live-demo-url.com" target="_blank" rel="noopener">Live Demo</a>
+        </div>
+      </div>
+    </article>
+  </div>
+
+  <!-- TRY IT: mini CRUD -->
+  <section class="panel" aria-labelledby="try">
+    <h2 id="try">Try the CRUD flow</h2>
+    <p class="hint">Add, edit and remove employee records. Data stays in this page only.</p>
+    <form id="form">
+      <input id="name" placeholder="Full name" aria-label="Full name" required maxlength="40">
+      <input id="role" placeholder="Role" aria-label="Role" required maxlength="40">
+      <button class="add" id="submit" type="submit">Add</button>
+    </form>
+    <ul id="list" aria-live="polite"></ul>
+    <p class="count" id="count"></p>
+  </section>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
